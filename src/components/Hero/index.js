@@ -75,7 +75,7 @@ const Hero = () => {
 
           <button
             onClick={handlesubmit}
-            className="bg-primary text-white lg:text-[19px] text-[10px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
+            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[10px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
           >
             Join now
           </button>
