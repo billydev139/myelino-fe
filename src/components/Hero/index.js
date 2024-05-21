@@ -26,6 +26,7 @@ const Hero = () => {
         icon: "success",
         title: "Subscribed!",
         text: response?.data?.message,
+        confirmButtonColor: "#2B8D8D"
       });
     } catch (error) {
       console.error("🚀 ~ handlesubmit ~ error:", error);
