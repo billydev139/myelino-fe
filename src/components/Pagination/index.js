@@ -13,7 +13,7 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => 
     <nav>
       <ul className="flex justify-center space-x-2 my-4">
         {pageNumbers.map(number => (
-          <li key={number} className={`page-item ${number === currentPage ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'} rounded-full px-3 py-1 border border-blue-500 cursor-pointer`}>
+          <li key={number} className={`page-item ${number === currentPage ? 'bg-[#2B8D8D] text-white' : 'bg-white text-[#2B8D8D]'} rounded-full px-3 py-1 border border-[#2B8D8D] cursor-pointer`}>
             <a onClick={() => onPageChange(number)} href="#">
               {number}
             </a>
