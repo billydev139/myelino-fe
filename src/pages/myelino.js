@@ -6,8 +6,8 @@ import Hero from '../components/Hero'
 const Home = () => {
   return (
     <>
-    <div className='container mx-auto'>
-    <Navbar />
+    <div className=''>
+    <Navbar  />
     <Hero />
     <Main />
     </div>
