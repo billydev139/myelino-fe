@@ -12,7 +12,7 @@ const Main = () => {
                             allows you to socialize, unlock new experiences, and create outings seamlessly all
                             from what other users have shared on the app.</span>
                     </p>
-                    <div className='flex flex-col justify-center'>
+                    <div className='flex flex-col justify-center '>
                         <p className='text-secondary font-bold lg:text-6xl text-2xl lg:pt-32 pt-14'>
                             Got any questions?
                         </p>
