@@ -7,8 +7,13 @@ import Swal from "sweetalert2";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
-
+  const [error, setError] = useState("");
   const handlesubmit = async () => {
+    if (!email) {
+      setError("please enter your email");
+      return;
+    }
+
     const payload = { email: email };
 
     try {
@@ -61,8 +66,12 @@ const Hero = () => {
             className="text-[#134040] pl-3 lg:pr-20 outline-none border-l border-primary"
             placeholder="example@email.com"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setError("");
+            }}
           />
+
           <button
             onClick={handlesubmit}
             className="bg-primary text-white lg:text-[19px] text-[10px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
@@ -70,6 +79,7 @@ const Hero = () => {
             Join now
           </button>
         </div>
+        <p className="pt-1  text-red-500">{error}</p>
         <p className="text-secondary font-regular text-xs pt-2 text-center">
           Don’t worry we won’t send you anything except when we launch the app
           or send out Beta-Testings :)
