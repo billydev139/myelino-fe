@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
+        sans: ["Roboto", "ui-sans-serif", "system-ui"],
       },
       colors: {
-        'primary': '#2B8D8D',
-        'secondary': '#134040',
-      } 
+        primary: "#2B8D8D",
+        secondary: "#134040",
+      },
     },
   },
   plugins: [],
-}
+};
 
 
