@@ -43,7 +43,7 @@ const Main = () => {
         </div>
 
         {/* Mobile */}
-        <div className="container lg:hidden  mx-auto  px-4 mt-20 mb-10">
+        <div className="container lg:hidden  mx-auto  px-4 mt-20 mb-40">
           <div className="flex flex-col items-start justify-start mb-10">
             <p className="text-[#2A4D4D] text-[28px]  font-bold ">
               Myelino{" "}
