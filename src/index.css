@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image{
+    background-image: url('../src/assets/herobg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+    @media (max-width: 480px) {
+      .bg-image {
+        background-image: url('../src/assets/mobherobg.png') !important;
+            background-size: contain;
+            background-position:center center ;
+            background-repeat: no-repeat;
+            height: 800px;
+      }
+    }

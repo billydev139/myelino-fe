@@ -41,12 +41,12 @@ const Hero = () => {
   return (
     <>
       <div
-        className="container flex flex-col items-center justify-center pt-16 lg:pb-48 pb-14 lg:px-0 px-4 mx-auto"
-        style={{
-          backgroundImage: `url(${herobg})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="container flex flex-col items-center justify-center pt-20 lg:pb-48 pb-14  lg:px-0 px-4 mx-auto bg-image"
+        // style={{
+        //   backgroundImage: `url(${herobg})`,
+        //   backgroundSize: "contain",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         {/* <div className="hidden lg:block text-center">
           <p className="text-secondary lg:text-[59px]  font-bold ">
@@ -86,19 +86,19 @@ const Hero = () => {
 
           <button
             onClick={handlesubmit}
-            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[16px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
+            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[14px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
           >
             Join now
           </button>
         </div>
         <p className="pt-1  text-red-500">{error}</p>
-        <p className="text-secondary font-regular text-xs pt-2 text-center">
+        <p className="text-secondary font-regular text-xs pt-2 text-center ">
           Don’t worry we won’t send you anything except when we launch the app
           or send out Beta-Testings :)
         </p>
       </div>
       <div className="overflow-hidden mt-5">
-        <div className="bg-primary h-4 w-[100%] lg:ml-52 ml-6"></div>
+        <div className="bg-primary h-4 w-[100%] 2xl:ml-52 xl:ml-24 ml-4"></div>
       </div>
     </>
   );
