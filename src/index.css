@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&display=swap");
+
+.my-font{
+  font-family: "Quicksand", sans-serif;
+}
+
 .bg-image{
     background-image: url('../src/assets/herobg.png');
     background-size: contain;
@@ -13,6 +19,5 @@
             background-size: contain;
             background-position:center center ;
             background-repeat: no-repeat;
-            height: 800px;
       }
     }

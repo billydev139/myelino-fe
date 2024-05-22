@@ -26,7 +26,7 @@ const Main = () => {
               <button className="bg-[#113939]  hover:bg-primary flex justify-start px-8 py-2 gap-8 rounded-md place-items-center  mt-4	">
                 <IoMailSharp className="text-white text-[20px]" />
 
-                <p className="text-white font-medium text-[24px]  lg:pr-32">
+                <p className="text-white my-font font-medium text-[24px]  lg:pr-32">
                   {" "}
                   Contact@myelino.com
                 </p>

@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="container flex flex-col items-center justify-center pt-20 lg:pb-48 pb-14  lg:px-0 px-4 mx-auto bg-image"
+        className="container flex flex-col items-center justify-center pt-20 lg:pb-48 pb-[8rem]  lg:px-0 px-4 mx-auto bg-image"
         // style={{
         //   backgroundImage: `url(${herobg})`,
         //   backgroundSize: "contain",
@@ -75,7 +75,7 @@ const Hero = () => {
           <IoMailSharp className="text-primary text-[24px]" />
           <input
             type="email"
-            className="text-[#134040] pl-3 lg:pr-20 outline-none border-l border-primary"
+            className="text-[#134040] pl-3 lg:w-[360px] outline-none border-l border-primary"
             placeholder="example@email.com"
             value={email}
             onChange={(e) => {
