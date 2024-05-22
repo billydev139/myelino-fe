@@ -48,16 +48,27 @@ const Hero = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <p className="text-secondary lg:text-6xl text-2xl font-bold lg:pb-4 pb-2">
-          Create <span className="text-primary">plans that meet</span> your
-        </p>
-        <p className="text-secondary lg:text-6xl text-2xl font-bold lg:pb-4 pb-2">
-          preferences and exceed
-        </p>
-        <p className="text-primary lg:text-6xl text-2xl font-bold lg:pb-4 pb-2">
-          your expectations.
-        </p>
-        <p className="text-secondary font-regular lg:text-[2.063rem] text-2xl lg:pt-16 pt-6">
+        {/* <div className="hidden lg:block text-center">
+          <p className="text-secondary lg:text-[59px]  font-bold ">
+            Create <span className="text-primary">plans that meet</span> your
+          </p>
+          <p className="text-secondary lg:text-[59px]  font-bold ">
+            preferences and exceed
+          </p>
+          <p className="text-primary lg:text-[59px]  font-bold">
+            your expectations.
+          </p>
+        </div> */}
+
+        <div className=" mx-auto text-center lg:w-[70%]">
+          <p className="text-secondary lg:text-[59px] text-[40px] font-bold lg:pb-10 pb-2">
+            Create <span className="text-primary">plans that meet </span>
+            <span className="text-secondary"> your preferences and exceed</span>
+            <span className="text-primary"> your expectations.</span>
+          </p>
+        </div>
+
+        <p className="text-secondary font-regular text-[2.063rem] lg:pt-16 pt-10">
           Join the waitlist
         </p>
         <div className="flex justify-center items-center gap-5 border border-primary rounded-xl mt-4 py-1 px-3">
@@ -75,7 +86,7 @@ const Hero = () => {
 
           <button
             onClick={handlesubmit}
-            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[10px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
+            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[16px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
           >
             Join now
           </button>
