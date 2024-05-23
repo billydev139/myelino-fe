@@ -2,14 +2,19 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ExcelExportComponent from "../ExcelSheet";
 import Pagination from "../Pagination";
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const Table = () => {
+  const navigate=useNavigate();
   const location = useLocation();
   const receivedData = location?.state?.password;
   console.log("🚀 ~ Table ~ receivedData:", receivedData)
   const [data, setData] = useState();
   useEffect(() => {
+   if(receivedData===undefined){
+    navigate('/login')
+    return
+   }
     const payload={
       password:receivedData
     }
