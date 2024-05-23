@@ -34,6 +34,9 @@ const Main = () => {
             </div>
           </div>
           <div className="flex flex-col order-1 lg:order-2 items-center justify-center mt-10">
+            <div className="font-bold text-secondary absolute pl-14 items-center mx-auto text-[70px]">
+              120{" "}
+            </div>
             <img
               className="mt-10 lg:w-full w-[70%]"
               src={peoplewhitlisted}
@@ -54,6 +57,10 @@ const Main = () => {
               </span>
             </p>
             <div className="flex flex-col  items-center justify-center mt-10">
+              <div className="font-bold text-secondary absolute pl-7 items-center mx-auto text-[30px]">
+                120{" "}
+              </div>
+
               <img
                 className="mt-10 lg:w-full w-[70%]"
                 src={peoplewhitlisted}

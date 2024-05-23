@@ -61,7 +61,7 @@ const Hero = () => {
         </div> */}
 
         <div className=" mx-auto text-center lg:w-[70%]">
-          <p className="text-secondary lg:text-[59px] text-[40px] font-bold lg:pb-10 pb-2">
+          <p className="text-secondary lg:text-[59px] text-[33px] font-bold lg:pb-10 pb-2">
             Create <span className="text-primary">plans that meet </span>
             <span className="text-secondary"> your preferences and exceed</span>
             <span className="text-primary"> your expectations.</span>
@@ -86,7 +86,7 @@ const Hero = () => {
 
           <button
             onClick={handlesubmit}
-            className="bg-primary hover:bg-secondary text-white lg:text-[19px] text-[14px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
+            className="bg-primary hover:bg-secondary text-white whitespace-nowrap lg:text-[19px] text-[14px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
           >
             Join now
           </button>
