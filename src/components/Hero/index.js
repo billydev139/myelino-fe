@@ -38,6 +38,7 @@ const Hero = ({setUpdateData,updateData}) => {
         text: response?.data?.message,
         confirmButtonColor: "#2B8D8D"
       });
+      setEmail("")
       setUpdateData(!updateData)
     } catch (error) {
       console.error("🚀 ~ handlesubmit ~ error:", error);
