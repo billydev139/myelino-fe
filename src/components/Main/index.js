@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import peoplewhitlisted from '../../assets/peoplewhitlisted.png'
 import { IoMailSharp } from "react-icons/io5";
+import axios from 'axios';
 
-const Main = () => {
+const Main = ({updateData}) => {
+  const [data,setData]=useState("")
+  console.log("🚀 ~ Main ~ data:", data)
+  
+  const payload={
+    password:"Pa$$w0rd!"
+  }
+  useEffect(()=>{
+   axios.post('http://216.225.204.78:5050/public/getSubscribeEmail',payload).then((res)=>{
+    setData(res)
+    console.log(res,"respoooooooooooo");
+   });
+   
+  },[updateData])
     return (
       <>
         {/* Dekstop */}
@@ -35,7 +49,7 @@ const Main = () => {
           </div>
           <div className="flex flex-col order-1 lg:order-2 items-center justify-center mt-10">
             <div className="font-bold text-secondary absolute pl-14 items-center mx-auto text-[70px]">
-              120{" "}
+              {data?.data?.allEmails?.length}{" "}
             </div>
             <img
               className="mt-10 lg:w-full w-[70%]"
@@ -58,7 +72,7 @@ const Main = () => {
             </p>
             <div className="flex flex-col  items-center justify-center mt-10">
               <div className="font-bold text-secondary absolute pl-7 items-center mx-auto text-[30px]">
-                120{" "}
+              {data?.data?.allEmails?.length}{" "}
               </div>
 
               <img

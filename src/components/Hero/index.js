@@ -5,10 +5,11 @@ import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-const Hero = () => {
+const Hero = ({setUpdateData,updateData}) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const handlesubmit = async () => {
+    
     if (!email) {
       setError("please enter your email");
       return;
@@ -22,18 +23,29 @@ const Hero = () => {
         payload
       );
       console.log("🚀 ~ handlesubmit ~ response:", response);
+      if(response?.status===203){
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text:response?.data?.message,
+          confirmButtonColor: "#2B8D8D"
+        });
+        return
+      }
       Swal.fire({
         icon: "success",
         title: "Subscribed!",
         text: response?.data?.message,
         confirmButtonColor: "#2B8D8D"
       });
+      setUpdateData(!updateData)
     } catch (error) {
       console.error("🚀 ~ handlesubmit ~ error:", error);
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: error?.response?.data?.message,
+        confirmButtonColor: "#2B8D8D"
       });
     }
   };

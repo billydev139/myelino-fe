@@ -2,12 +2,19 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ExcelExportComponent from "../ExcelSheet";
 import Pagination from "../Pagination";
+import { useLocation } from "react-router-dom";
 
 const Table = () => {
+  const location = useLocation();
+  const receivedData = location?.state?.password;
+  console.log("🚀 ~ Table ~ receivedData:", receivedData)
   const [data, setData] = useState();
   useEffect(() => {
+    const payload={
+      password:receivedData
+    }
     axios
-      .get("http://216.225.204.78:5050/public/getSubscribeEmail")
+      .post("http://216.225.204.78:5050/public/getSubscribeEmail",payload)
       .then((res) => {
         console.log("🚀 ~ useEffect ~ res:", res);
         setData(res?.data?.allEmails);
