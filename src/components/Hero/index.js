@@ -19,7 +19,7 @@ const Hero = ({setUpdateData,updateData}) => {
 
     try {
       const response = await axios.post(
-        "http://216.225.204.78:5050/public/subscribeEmail",
+        "https://api.myelino.com/public/subscribeEmail",
         payload
       );
       console.log("🚀 ~ handlesubmit ~ response:", response);

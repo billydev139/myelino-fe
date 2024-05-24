@@ -19,7 +19,7 @@ const Table = () => {
       password:receivedData
     }
     axios
-      .post("http://216.225.204.78:5050/public/getSubscribeEmail",payload)
+      .post("https://api.myelino.com/public/getSubscribeEmail",payload)
       .then((res) => {
         console.log("🚀 ~ useEffect ~ res:", res);
         setData(res?.data?.allEmails);

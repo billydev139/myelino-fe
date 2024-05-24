@@ -11,7 +11,7 @@ const Main = ({updateData}) => {
     password:"Pa$$w0rd!"
   }
   useEffect(()=>{
-   axios.post('http://216.225.204.78:5050/public/getSubscribeEmail',payload).then((res)=>{
+   axios.post('https://api.myelino.com/public/getSubscribeEmail',payload).then((res)=>{
     setData(res)
     console.log(res,"respoooooooooooo");
    });
