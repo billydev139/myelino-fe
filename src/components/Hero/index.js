@@ -84,7 +84,7 @@ const Hero = ({setUpdateData,updateData}) => {
         <p className="text-secondary font-regular text-[2.063rem] lg:pt-16 pt-10">
           Join the waitlist
         </p>
-        <div className="flex justify-center items-center gap-5 border border-primary rounded-xl mt-4 py-1 px-3">
+        <div className="flex justify-center items-center gap-5 border border-primary pl-4 rounded-3xl mt-4  ">
           <IoMailSharp className="text-primary text-[24px]" />
           <input
             type="email"
@@ -99,15 +99,19 @@ const Hero = ({setUpdateData,updateData}) => {
 
           <button
             onClick={handlesubmit}
-            className="bg-primary hover:bg-secondary text-white whitespace-nowrap lg:text-[19px] text-[14px] lg:px-5 px-4 lg:py-2 py-2 rounded-2xl"
+            className="bg-primary hover:bg-secondary text-white whitespace-nowrap rounded-full lg:text-[17px] text-[14px] lg:px-5 px-4 lg:py-2 py-2"
           >
             Join now
           </button>
         </div>
         <p className="pt-1  text-red-500">{error}</p>
-        <p className="text-secondary font-regular text-xs pt-2 text-center ">
+        <p className="hidden lg:block text-secondary font-regular text-xs pt-2 text-center ">
           Don’t worry we won’t send you anything except when we launch the app
           or send out Beta-Testings :)
+        </p>
+        <p className="lg:hidden text-secondary font-regular text-xs pt-2 text-center ">
+          Don’t worry we won’t send you anything except when we <br />
+          launch the app or send out Beta-Testings :)
         </p>
       </div>
       <div className="overflow-hidden mt-5">

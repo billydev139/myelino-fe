@@ -71,7 +71,7 @@ const Main = ({updateData}) => {
               </span>
             </p>
             <div className="flex flex-col  items-center justify-center mt-10">
-              <div className="font-bold text-secondary absolute pl-7 items-center mx-auto text-[30px]">
+              <div className="font-bold text-secondary absolute pt-5 pl-7 items-center mx-auto text-[30px]">
               {data?.data?.allEmails?.length}{" "}
               </div>
 
