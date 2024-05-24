@@ -22,7 +22,6 @@ const Hero = ({setUpdateData,updateData}) => {
         "https://api.myelino.com/public/subscribeEmail",
         payload
       );
-      console.log("🚀 ~ handlesubmit ~ response:", response);
       if(response?.status===203){
         Swal.fire({
           icon: "error",
@@ -41,7 +40,6 @@ const Hero = ({setUpdateData,updateData}) => {
       setEmail("")
       setUpdateData(!updateData)
     } catch (error) {
-      console.error("🚀 ~ handlesubmit ~ error:", error);
       Swal.fire({
         icon: "error",
         title: "Oops...",

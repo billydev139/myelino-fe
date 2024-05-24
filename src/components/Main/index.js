@@ -5,7 +5,6 @@ import axios from 'axios';
 
 const Main = ({updateData}) => {
   const [data,setData]=useState("")
-  console.log("🚀 ~ Main ~ data:", data)
   
   const payload={
     password:"Pa$$w0rd!"
@@ -13,7 +12,6 @@ const Main = ({updateData}) => {
   useEffect(()=>{
    axios.post('https://api.myelino.com/public/getSubscribeEmail',payload).then((res)=>{
     setData(res)
-    console.log(res,"respoooooooooooo");
    });
    
   },[updateData])

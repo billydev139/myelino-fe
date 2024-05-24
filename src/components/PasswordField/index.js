@@ -9,7 +9,6 @@ const PasswordField = () => {
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
-  console.log("🚀 ~ PasswordField ~ password:", password);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword); // Toggle password visibility state

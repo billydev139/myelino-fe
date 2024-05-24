@@ -8,7 +8,6 @@ const Table = () => {
   const navigate=useNavigate();
   const location = useLocation();
   const receivedData = location?.state?.password;
-  console.log("🚀 ~ Table ~ receivedData:", receivedData)
   const [data, setData] = useState();
   useEffect(() => {
    if(receivedData===undefined){
@@ -21,7 +20,6 @@ const Table = () => {
     axios
       .post("https://api.myelino.com/public/getSubscribeEmail",payload)
       .then((res) => {
-        console.log("🚀 ~ useEffect ~ res:", res);
         setData(res?.data?.allEmails);
       });
   }, []);
