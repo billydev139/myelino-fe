@@ -51,7 +51,7 @@ const Main = ({ updateData }) => {
         
         <div className="relative flex flex-col order-1 lg:order-2 items-center justify-center mt-10">
           <div className="font-bold text-secondary absolute  items-center mx-auto text-[70px]">
-            {/* {data?.data?.allEmails?.length}{" "} */} 108
+            {/* {data?.data?.allEmails?.length}{" "} */}
           </div>
           <div className="font-normal text-secondary absolute top-80 items-center mx-auto text-[25px]">
             People waitlisted
@@ -76,13 +76,16 @@ const Main = ({ updateData }) => {
               users have shared on the app.
             </span>
           </p>
-          <div className="flex flex-col  items-center justify-center mt-10">
-            <div className="font-bold text-secondary absolute pt-5 pl-7 items-center mx-auto text-[30px]">
-              {data?.data?.allEmails?.length}{" "}
+          <div className="relative flex flex-col  items-center justify-center mt-10">
+            <div className="font-bold text-secondary absolute pt-5 items-center mx-auto text-[20px]">
+              {data?.data?.allEmails?.length}{" "}118
             </div>
+            <div className="font-normal text-secondary absolute top-48 items-center mx-auto text-[15px]">
+            People Waitlisted
+          </div>
 
             <img
-              className="animate-spin mt-10 lg:w-full w-[70%]"
+              className="animate-spin-slow mt-10 lg:w-full w-[95%]"
               src={peoplewhitlisted}
               alt="target image"
             />

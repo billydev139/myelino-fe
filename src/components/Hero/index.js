@@ -76,23 +76,23 @@ const Hero = ({ setUpdateData, updateData }) => {
         </div> */}
         <img
           src={gifimage}
-          className="absolute w-28 right-3 top-3 animate-bounce"
+          className="absolute lg:w-28 w-14 right-3 top-3 animate-bounce"
         />
         <img
           src={gifimage2}
-          className="absolute w-28 left-3  animate-bounce"
+          className="absolute lg:w-28 w-14 left-3  animate-bounce"
         />
          <img
           src={gifimage3}
-          className="absolute w-20  right-48 animate-bounce"
+          className="absolute lg:w-20 w-8 lg:top-0 top-72  right-48 animate-bounce"
         />
          <img
           src={gifimage4}
-          className="absolute w-12 left-60 top-96 animate-bounce"
+          className="absolute w-12 lg:left-60 lg:top-96 lg:bottom-0 bottom-16  animate-bounce"
         />
           <img
           src={gifimage5}
-          className="absolute w-24 bottom-24 right-10  animate-bounce"
+          className="absolute lg:w-24 w-12 lg:bottom-24 bottom-12 right-10  animate-bounce"
         />
         <div className=" mx-auto text-center lg:w-[70%] ">
           <p className="text-secondary lg:text-[59px] text-[33px] font-bold lg:pb-10 pb-2">
