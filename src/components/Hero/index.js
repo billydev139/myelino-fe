@@ -4,7 +4,7 @@ import herobg from "../../assets/herobg.png";
 import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-
+import gifimage from "../../assets/Frame 316.gif"
 const Hero = ({setUpdateData,updateData}) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -115,6 +115,7 @@ const Hero = ({setUpdateData,updateData}) => {
       <div className="overflow-hidden mt-5">
         <div className="bg-primary h-4 w-[100%] 2xl:ml-52 xl:ml-24 ml-4"></div>
       </div>
+      {/* <img src={gifimage} /> */}
     </>
   );
 };
