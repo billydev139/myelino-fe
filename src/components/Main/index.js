@@ -51,7 +51,7 @@ const Main = ({ updateData }) => {
         
         <div className="relative flex flex-col order-1 lg:order-2 items-center justify-center mt-10">
           <div className="font-bold text-secondary absolute  items-center mx-auto text-[70px]">
-            {/* {data?.data?.allEmails?.length}{" "} */}
+            {data?.data?.allEmails?.length}{" "}
           </div>
           <div className="font-normal text-secondary absolute top-80 items-center mx-auto text-[25px]">
             People waitlisted
@@ -78,7 +78,7 @@ const Main = ({ updateData }) => {
           </p>
           <div className="relative flex flex-col  items-center justify-center mt-10">
             <div className="font-bold text-secondary absolute pt-5 items-center mx-auto text-[20px]">
-              {data?.data?.allEmails?.length}{" "}118
+              {data?.data?.allEmails?.length}{" "}
             </div>
             <div className="font-normal text-secondary absolute top-48 items-center mx-auto text-[15px]">
             People Waitlisted
