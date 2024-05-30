@@ -4,7 +4,7 @@ import herobg from "../../assets/herobg.png";
 import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-import gifimage from "../../assets/Frame 316.gif";
+import gifimage1 from "../../assets/gifimage1.gif";
 import gifimage2 from "../../assets/gif2.gif";
 import gifimage3 from "../../assets/Group-291.gif";
 import gifimage4 from "../../assets/Frame 323 (3).gif";
@@ -75,8 +75,8 @@ const Hero = ({ setUpdateData, updateData }) => {
           </p>
         </div> */}
         <img
-          src={gifimage}
-          className="absolute lg:w-28 w-14 right-3 top-3 animate-bounce"
+          src={gifimage1}
+          className="absolute lg:w-28 w-14 right-3 top-3 "
         />
         <img
           src={gifimage2}
